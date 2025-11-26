@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="81dp"
+        android:enabled="false"
+        android:text="بزن زووووود" />
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/videoView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="27dp"
+        android:text="GO"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- اجازه دسترسی به اینترنت برای سرور و کلاینت -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- اجازه دسترسی به وضعیت شبکه -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- اجازه دسترسی به وضعیت WiFi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +22,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Khoshtip"
         tools:targetApi="31">
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinLobbyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HostLobbyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SinglePlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplayerMenuActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

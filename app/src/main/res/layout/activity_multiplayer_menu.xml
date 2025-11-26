@@ -6,19 +6,19 @@
     android:gravity="center">
 
     <Button
-        android:id="@+id/btnSingle"
+        android:id="@+id/btnCreate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="تک نفره"
+        android:text="ساخت بازی"
         android:textSize="22sp" />
 
     <Button
-        android:id="@+id/btnMulti"
+        android:id="@+id/btnJoin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnSingle"
-        android:text="چند نفره"
+        android:layout_below="@id/btnCreate"
+        android:text="پیوستن به بازی"
         android:textSize="22sp" />
 
 </RelativeLayout>

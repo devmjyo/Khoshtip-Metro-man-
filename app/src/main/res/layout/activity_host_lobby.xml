@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="top">
+
+    <!-- نشان دادن آی‌پی میزبان -->
+    <TextView
+        android:id="@+id/txtIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP میزبان:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <!-- ورودی نام هاست -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام خود را وارد کنید"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- دکمه ثبت نام -->
+    <Button
+        android:id="@+id/btnSetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- عنوان لیست بازیکن‌ها -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="بازیکنان حاضر:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <!-- لیست بازیکن‌ها -->
+    <ListView
+        android:id="@+id/listPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+    <!-- دکمه شروع بازی -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="شروع بازی"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
